@@ -6,10 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
-/**
- * Dataset generator for testing graph algorithms
- * Generates 9 datasets: 3 small, 3 medium, 3 large
- */
+
 public class DatasetGenerator {
 
     static class EdgeData {

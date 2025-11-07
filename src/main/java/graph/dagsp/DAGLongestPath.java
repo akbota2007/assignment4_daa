@@ -5,12 +5,12 @@ import graph.Graph.Edge;
 import java.util.*;
 
 public class DAGLongestPath {
-    private Graph graph;
-    private int[] dist;
-    private int[] parent;
+    private final Graph graph;
+    private final int[] dist;
+    private final int[] parent;
     private List<Integer> criticalPath;
     private int criticalLength;
-    private graph.dagsp.Metrics metrics;
+    private final graph.dagsp.Metrics metrics;
 
     public DAGLongestPath(Graph graph, List<Integer> topoOrder) {
         this.graph = graph;
@@ -84,11 +84,6 @@ public class DAGLongestPath {
     }
 
 
-    public int getDistance(int vertex) {
-        return dist[vertex];
-    }
-
-
     public List<Integer> getCriticalPath() {
         return criticalPath;
     }
@@ -98,23 +93,6 @@ public class DAGLongestPath {
         return criticalLength;
     }
 
-
-    public List<Integer> getPath(int vertex) {
-        if (dist[vertex] == Integer.MIN_VALUE) {
-            return Collections.emptyList();
-        }
-
-        List<Integer> path = new ArrayList<>();
-        int current = vertex;
-
-        while (current != -1) {
-            path.add(current);
-            current = parent[current];
-        }
-
-        Collections.reverse(path);
-        return path;
-    }
 
     public graph.dagsp.Metrics getMetrics() {
         return metrics;

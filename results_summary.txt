@@ -1,0 +1,68 @@
+DAA ASSIGNMENT 4 - RESULTS SUMMARY
+====================================================================================================
+
+Dataset: small_dag_1.json
+  Nodes: 6, Edges: 6
+  SCCs: 6, Largest SCC: 1
+  Tarjan:   0.292 ms (DFS: 6, Edges: 6)
+  Kosaraju: 0.068 ms (DFS: 12, Edges: 12)
+  Shortest Path: Max distance = 10, Relaxations = 3
+  Longest Path: Critical length = 18, Path = [0, 4, 5]
+
+Dataset: small_cyclic_1.json
+  Nodes: 8, Edges: 11
+  SCCs: 1, Largest SCC: 8
+  Tarjan:   0.034 ms (DFS: 8, Edges: 11)
+  Kosaraju: 0.038 ms (DFS: 16, Edges: 22)
+
+Dataset: small_mixed_1.json
+  Nodes: 10, Edges: 15
+  SCCs: 2, Largest SCC: 5
+  Tarjan:   0.033 ms (DFS: 10, Edges: 15)
+  Kosaraju: 0.040 ms (DFS: 20, Edges: 30)
+
+Dataset: medium_dag_1.json
+  Nodes: 12, Edges: 11
+  SCCs: 12, Largest SCC: 1
+  Tarjan:   0.037 ms (DFS: 12, Edges: 11)
+  Kosaraju: 0.070 ms (DFS: 24, Edges: 22)
+  Shortest Path: Max distance = 18, Relaxations = 5
+  Longest Path: Critical length = 19, Path = [0, 2, 10, 11]
+
+Dataset: medium_cyclic_1.json
+  Nodes: 15, Edges: 42
+  SCCs: 1, Largest SCC: 15
+  Tarjan:   0.035 ms (DFS: 15, Edges: 42)
+  Kosaraju: 0.062 ms (DFS: 30, Edges: 84)
+
+Dataset: medium_mixed_1.json
+  Nodes: 18, Edges: 27
+  SCCs: 3, Largest SCC: 6
+  Tarjan:   0.045 ms (DFS: 18, Edges: 27)
+  Kosaraju: 0.055 ms (DFS: 36, Edges: 54)
+
+Dataset: large_dag_1.json
+  Nodes: 25, Edges: 44
+  SCCs: 25, Largest SCC: 1
+  Tarjan:   0.055 ms (DFS: 25, Edges: 44)
+  Kosaraju: 0.082 ms (DFS: 50, Edges: 88)
+  Shortest Path: Max distance = 30, Relaxations = 21
+  Longest Path: Critical length = 34, Path = [0, 10, 11, 13, 17, 20]
+
+Dataset: large_cyclic_1.json
+  Nodes: 35, Edges: 119
+  SCCs: 1, Largest SCC: 35
+  Tarjan:   0.091 ms (DFS: 35, Edges: 119)
+  Kosaraju: 0.159 ms (DFS: 70, Edges: 238)
+
+Dataset: large_mixed_1.json
+  Nodes: 40, Edges: 55
+  SCCs: 4, Largest SCC: 10
+  Tarjan:   0.069 ms (DFS: 40, Edges: 55)
+  Kosaraju: 0.393 ms (DFS: 80, Edges: 110)
+
+Summary:
+----------------------------------------------------------------------------------------------------
+Average Tarjan Time:   0.077 ms
+Average Kosaraju Time: 0.107 ms
+Tarjan faster in: 8/9 cases
